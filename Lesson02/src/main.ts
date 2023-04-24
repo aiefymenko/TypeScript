@@ -10,6 +10,8 @@ isLoading = true;
 album = 'van Halen';
 
 
-const sum = (a,b) => {
+const sum = (a: number,b: string) => {
   return a + b;
 }
+
+let postId: string | number;
