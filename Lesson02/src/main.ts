@@ -8,3 +8,8 @@ myName = "Joe";
 meaningOfLife = 42;
 isLoading = true;
 album = 'van Halen';
+
+
+const sum = (a,b) => {
+  return a + b;
+}
