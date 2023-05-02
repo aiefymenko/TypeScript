@@ -8,3 +8,12 @@ type Guitarist = {
   active?: boolean,
   albums: stringOrNumberArray
 }
+
+type UserId = stringOrNumber;
+
+// Literal types
+
+let myName: 'Artem';
+
+let userName: 'Artem' | 'John' | 'Amie';
+userName = 'Amie';
