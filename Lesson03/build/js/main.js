@@ -30,3 +30,12 @@ let evh = {
     active: false,
     albums: [1994, 5150, 'OU781']
 };
+let jp = {
+    name: 'Jimmy',
+    active: true,
+    albums: ['I', 'II']
+};
+const greetGuitarist = (guitarist) => {
+    return `Hello ${guitarist.name}`;
+};
+console.log(greetGuitarist(jp));
