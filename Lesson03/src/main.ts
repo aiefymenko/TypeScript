@@ -21,3 +21,33 @@ bands.push('Van Halen');
 let myTuple : [string, number, boolean] = ['Artem', 33, true];
 
 let mixed = ['John', 1, false]
+
+//Objects
+let myObj : object
+myObj = [];
+console.log(typeof myObj);
+myObj = bands;
+myObj = {
+
+}
+
+const exampleObj = {
+  prop1 : "Artem",
+  prop2 : true
+}
+
+exampleObj.prop2 = false;
+
+type Guitarist = {
+  name: string,
+  active: boolean,
+  albums: (string | number)[]
+}
+
+let evh: Guitarist = {
+  name: 'Eddie',
+  active: false,
+  albums: [1994, 5150, 'OU781']
+}
+
+
