@@ -9,3 +9,5 @@ stringArr.push('hey');
 
 guitars[0] = 1994;
 guitars.unshift('Jim');
+
+stringArr = guitars;
