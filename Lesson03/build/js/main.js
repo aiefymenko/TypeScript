@@ -11,3 +11,6 @@ mixedData = guitars;
 let test = [];
 let bands = [];
 bands.push('Van Halen');
+//Tuple
+let myTuple = ['Artem', 33, true];
+let mixed = ['John', 1, false];
