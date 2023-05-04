@@ -17,3 +17,10 @@ let myName: 'Artem';
 
 let userName: 'Artem' | 'John' | 'Amie';
 userName = 'Amie';
+
+
+//fucntions
+
+const add = (a: number,b: number): number => {
+  return a + b;
+}
