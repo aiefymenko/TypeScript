@@ -28,3 +28,11 @@ const add = (a: number,b: number): number => {
 const logMsg = (message: any): void => {
   console.log(message);
 }
+
+logMsg('Hello');
+logMsg(add(2,3));
+
+let subtract = function (c: number, d: number):
+number {
+  return c - d;
+}

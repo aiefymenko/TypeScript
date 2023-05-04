@@ -11,3 +11,8 @@ const add = (a, b) => {
 const logMsg = (message) => {
     console.log(message);
 };
+logMsg('Hello');
+logMsg(add(2, 3));
+let subtract = function (c, d) {
+    return c - d;
+};
