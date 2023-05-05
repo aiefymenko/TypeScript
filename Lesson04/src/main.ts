@@ -36,3 +36,9 @@ let subtract = function (c: number, d: number):
 number {
   return c - d;
 }
+
+type mathFunction = (a: number, b: number) => number;
+
+let multiply: mathFunction = function(c,d) {
+  return c * d;
+}

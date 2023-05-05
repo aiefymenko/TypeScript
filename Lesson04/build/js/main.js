@@ -16,3 +16,6 @@ logMsg(add(2, 3));
 let subtract = function (c, d) {
     return c - d;
 };
+let multiply = function (c, d) {
+    return c * d;
+};
