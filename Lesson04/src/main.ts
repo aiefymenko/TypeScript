@@ -37,13 +37,21 @@ number {
   return c - d;
 }
 
-// type mathFunction = (a: number, b: number) => number;
-interface mathFunction {
-  (a: number, b: number): number;
-} 
+type mathFunction = (a: number, b: number) => number;
+// interface mathFunction {
+//   (a: number, b: number): number;
+// } 
 
 let multiply: mathFunction = function(c,d) {
   return c * d;
 };
 
 logMsg(multiply(2,2));
+
+//optional parameters
+const addAll = (a: number, b: number, c?: number): number => {
+  if (typeof c !== 'undefined') {
+    return a + b + c;
+  }
+  return a + b;
+}
