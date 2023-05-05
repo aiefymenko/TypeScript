@@ -19,3 +19,4 @@ let subtract = function (c, d) {
 let multiply = function (c, d) {
     return c * d;
 };
+logMsg(multiply(2, 2));
