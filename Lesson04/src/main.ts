@@ -79,3 +79,17 @@ logMsg(total(1,2,3,4));
 const createError = (errMsg: string): never => {
   throw new Error(errMsg);
 }
+
+const infinite = () => {
+  let i: number = 1
+  while (true) {
+    i++
+    if (i > 100) break
+  }
+}
+
+const numberOrString = (value: number | string): string => {
+  if (typeof value === 'string') return 'string'
+  if (typeof value === 'number') return 'number'
+  return createError('This should never happen')
+}
