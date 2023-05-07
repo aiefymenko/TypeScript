@@ -74,3 +74,8 @@ const total = (...nums: number[]): number => {
 }
 
 logMsg(total(1,2,3,4));
+
+// Never type of function
+const createError = (errMsg: string): never => {
+  throw new Error(errMsg);
+}
