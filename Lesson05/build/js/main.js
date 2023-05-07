@@ -15,3 +15,7 @@ let myVal = addOrConcat(2, 2, 'concat');
 let nextVal = addOrConcat(2, 2, 'concat');
 //double casting or force casting
 10;
+//The DOM
+const img = document.querySelector('img');
+const myImg = document.getElementById('#img');
+img.src;
