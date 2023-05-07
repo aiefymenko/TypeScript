@@ -55,3 +55,7 @@ const addAll = (a: number, b: number, c?: number): number => {
   }
   return a + b;
 }
+
+const sumAll = (a: number, b: number, c: number = 2): number => {
+    return a + b + c;
+}

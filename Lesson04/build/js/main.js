@@ -30,3 +30,6 @@ const addAll = (a, b, c) => {
     }
     return a + b;
 };
+const sumAll = (a, b, c = 2) => {
+    return a + b + c;
+};
