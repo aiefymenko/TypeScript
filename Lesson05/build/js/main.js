@@ -13,3 +13,5 @@ const addOrConcat = (a, b, c) => {
 let myVal = addOrConcat(2, 2, 'concat');
 //Be careful! TS-sees no problem here but it returns string
 let nextVal = addOrConcat(2, 2, 'concat');
+//double casting or force casting
+10;
