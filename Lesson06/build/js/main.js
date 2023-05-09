@@ -18,7 +18,7 @@
 // }
 //DRY version of class
 class Coder {
-    constructor(name, music, age, lang) {
+    constructor(name, music, age, lang = 'Typescript') {
         this.name = name;
         this.music = music;
         this.age = age;
@@ -28,4 +28,12 @@ class Coder {
         this.age = age;
         this.lang = lang;
     }
+    getAge() {
+        return `Hello, I'm ${this.age}`;
+    }
 }
+//new instance of Coder
+const Artem = new Coder('Artem', 'Rock', 33);
+console.log(Artem.getAge());
+// console.log(Artem.age);
+// console.log(Artem.lang);
