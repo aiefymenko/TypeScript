@@ -85,4 +85,18 @@ class Bands {
     get data() {
         return this.dataState;
     }
+    set data(value) {
+        if (Array.isArray(value) && value.every(elem => typeof elem === 'string')) {
+            this.dataState = value;
+            return;
+        }
+        else
+            throw new Error('Param is not an array of strings');
+    }
 }
+const MyBands = new Bands();
+MyBands.data = ['Neil Young', 'Led Zeppeling'];
+console.log(MyBands.data);
+MyBands.data = [...MyBands.data, 'ZZ Top'];
+console.log(MyBands.data);
+// MyBands.data = 'Van Halen';
