@@ -109,3 +109,16 @@ const Amy = new Peeps('Amy');
 
 console.log(Peeps.count);
 console.log(Steve.id);
+////////////////////////////////////////////////
+
+class Bands {
+    private dataState: string[]
+
+    constructor() {
+        this.dataState = [];
+    }
+
+    public get data(): string[] {
+        return this.dataState
+    }
+}
