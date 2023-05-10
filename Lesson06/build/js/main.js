@@ -60,3 +60,20 @@ class Guitarist {
 }
 const Page = new Guitarist('Jimmy', 'guitar');
 console.log(Page.play('strums'));
+//////////////////////////////////////////
+class Peeps {
+    static getCount() {
+        return Peeps.count;
+    }
+    constructor(name) {
+        this.name = name;
+        this.name = name,
+            this.id = ++Peeps.count; //first id will 1
+    }
+}
+Peeps.count = 0;
+const John = new Peeps('John');
+const Steve = new Peeps('Steve');
+const Amy = new Peeps('Amy');
+console.log(Peeps.count);
+console.log(Steve.id);
