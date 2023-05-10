@@ -49,3 +49,12 @@ class WebDev extends Coder {
 }
 const Yana = new WebDev('Mac', 'Yana', 'Classic', 25);
 console.log(Yana.getLang());
+class Guitarist {
+    constructor(name, instrument) {
+        this.name = name,
+            this.instrument = instrument;
+    }
+    play(action) {
+        return `${this.name} ${action} the ${this.instrument} `;
+    }
+}
