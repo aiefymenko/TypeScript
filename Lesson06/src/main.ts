@@ -57,3 +57,6 @@ class WebDev extends Coder {
         return `I write ${this.lang}`
     }
 }
+
+const Yana = new WebDev('Mac', 'Yana', 'Classic', 25);
+console.log(Yana.getLang());
