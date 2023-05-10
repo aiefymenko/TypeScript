@@ -37,3 +37,13 @@ const Artem = new Coder('Artem', 'Rock', 33);
 console.log(Artem.getAge());
 // console.log(Artem.age);
 // console.log(Artem.lang);
+class WebDev extends Coder {
+    constructor(computer, name, music, age) {
+        super(name, music, age);
+        this.computer = computer;
+        this.computer = computer;
+    }
+    getLang() {
+        return `I write ${this.lang}`;
+    }
+}
