@@ -24,4 +24,10 @@ const student = {
     GPA: 3.5,
     classes: [100, 200]
 };
-console.log(student.test);
+// console.log(student.test);
+for (const key in student) {
+    console.log(`${key}: ${student[key]}`);
+}
+Object.keys(student).map(key => {
+    console.log(student[key]);
+});

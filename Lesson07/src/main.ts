@@ -38,7 +38,7 @@ console.log(todaysTransaction['Artem']); //returns undefined
 
 ///////////////////////////////////////////
 interface Student {
-    [key: string]: string | number | number[] | undefined
+    // [key: string]: string | number | number[] | undefined
     name: string,
     GPA: number,
     classes?: number[]
@@ -50,4 +50,12 @@ const student: Student = {
     classes: [100,200]
 }
 
-console.log(student.test);
+// console.log(student.test);
+
+for (const key in student) {
+    console.log(`${key}: ${student[key as keyof Student]}`)
+}
+
+Object.keys(student).map(key => {
+    console.log(student[key as keyof typeof student])
+})
