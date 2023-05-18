@@ -98,3 +98,22 @@ const usersArray = [
     },
 ];
 console.log(getUsersProperty(usersArray, 'email'));
+console.log(getUsersProperty(usersArray, 'username'));
+class StateObject {
+    constructor(value) {
+        this.data = value;
+    }
+    get state() {
+        return this.data;
+    }
+    set state(value) {
+        this.data = value;
+    }
+}
+const store = new StateObject('John');
+console.log(store.state);
+store.state = 'Artem';
+// store.state = 12;
+const myState = new StateObject([15]);
+myState.state = ['Artem', 33, true];
+console.log(myState.state);
