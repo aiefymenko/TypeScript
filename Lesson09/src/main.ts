@@ -68,3 +68,9 @@ const score: AssignResult = {
     grade: 85,
 }
 
+type AssignPreview = Omit<Assignment, 'grade' | 'verified'>
+
+const preview: AssignPreview = {
+    studentId: 'K123',
+    title: 'FINAL Project'
+}

@@ -36,3 +36,7 @@ const score = {
     studentId: 'k123',
     grade: 85,
 };
+const preview = {
+    studentId: 'K123',
+    title: 'FINAL Project'
+};
