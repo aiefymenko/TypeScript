@@ -48,3 +48,13 @@ const finalGrades: Record<Student, LetterGrades> = {
     Sara: 'B',
     Kelly: 'U'
 }
+
+interface Grades {
+    assign1: number,
+    assign2: number,
+}
+
+const gradeData: Record<Student, Grades> = {
+    Sara: {assign1: 85, assign2: 93},
+    Kelly: {assign1: 76, assign2: 15}
+}
