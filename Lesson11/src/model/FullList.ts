@@ -4,7 +4,7 @@ interface List {
   list: ListItem[],
   load(): void,
   save(): void,
-  clear(): void,
+  clearList(): void,
   addItem(itemObj: ListItem): void,
   removeItem(id: string): void
 }
@@ -19,6 +19,15 @@ static instance: FullList = new FullList()
 
   get list(): ListItem[] {
     return this._list;
+  }
+
+ save(): void {
+    localStorage.setItem('myList', JSON.stringify(this._list));
+  }
+
+  clearList(): void {
+    this._list = [];
+    this.save();
   }
 
 }
