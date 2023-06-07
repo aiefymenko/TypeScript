@@ -33,4 +33,9 @@ static instance: FullList = new FullList()
     this._list.push(itemObj);
     this.save();
   }
+
+  removeItem(id: string): void {
+    this._list = this._list.filter(item => item.id !== id);
+    this.save();
+  }
 }
