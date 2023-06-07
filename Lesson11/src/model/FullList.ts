@@ -29,5 +29,8 @@ static instance: FullList = new FullList()
     this._list = [];
     this.save();
   }
-
+  addItem(itemObj: ListItem): void {
+    this._list.push(itemObj);
+    this.save();
+  }
 }
